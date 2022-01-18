@@ -131,7 +131,7 @@ export default {
       axios
         .post(this.todosUri, payload)
         .then((res) => this.todos.push(res.data));
-
+      this.todoNameForm = "";
     },
 
     //Usuwa zadanie o podanym id
